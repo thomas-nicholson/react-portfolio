@@ -1,6 +1,10 @@
-function Project() {
+function Project({title, description, img}) {
     return(
-        <h1>Project</h1>
+        <div>
+            <h1>{title}</h1>
+            <img src={img} />
+            <p>{description}</p>
+        </div>
     );
 }
 
