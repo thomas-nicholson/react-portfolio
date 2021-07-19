@@ -3,9 +3,10 @@ import Project from "./Project"
 import projects from "../utils/projects"
 
 const bodyStyle = {
-    display: "inline-grid",
-    gridRowGap: "100px",
-    color: "Green"
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    color: "Green",
 }
 
 function Body() {
