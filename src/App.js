@@ -1,17 +1,8 @@
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Body from './components/Body';
+import Container from './components/Container.js';
 
-import style from './App.css'
+import './App.css';
 
-function App() {
-  return (
-    <div>
-      <Header />
-      <Body />
-      <Footer />
-    </div>
-  );
-}
+const App = () => <Container />;
+
 
 export default App;

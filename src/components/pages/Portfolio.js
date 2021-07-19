@@ -1,6 +1,6 @@
-import Project from "./Project"
+import Project from "../Project"
 
-import projects from "../utils/projects"
+import projects from "../../utils/projects"
 
 const portfolioStyle = {
     display: "flex",
