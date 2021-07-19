@@ -2,16 +2,16 @@ import Project from "./Project"
 
 import projects from "../utils/projects"
 
-const bodyStyle = {
+const portfolioStyle = {
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "center",
     color: "Green",
 }
 
-function Body() {
+function Portfolio() {
     return(
-        <div style={bodyStyle} >
+        <div style={portfolioStyle} >
             {projects.map(({title, img, gitLink, deployedLink, description}) => {
           return (
             <Project 
@@ -27,4 +27,4 @@ function Body() {
     )
 }
 
-export default Body;
+export default Portfolio;
