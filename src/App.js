@@ -1,24 +1,12 @@
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Project from './components/Project';
-
-import projects from './utils/projects';
+import Body from './components/Body';
 
 function App() {
   return (
     <div>
       <Header />
-      {projects.map(({title, img, gitLink, deployedLink, description}) => {
-        return (
-          <Project 
-            title={title} 
-            description={description}
-            img={img}
-            gitLink={gitLink}
-            deployedLink={deployedLink}
-          />
-        )
-      })}
+      <Body />
       <Footer />
     </div>
   );
