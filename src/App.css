@@ -3,6 +3,14 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-a:hover {
+a {
+  
+}
+
+a:hover, a:visited:hover {
   color: red;
+}
+
+a:visited {
+  color: inherit;
 }
