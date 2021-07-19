@@ -5,9 +5,6 @@ import Project from './components/Project';
 import projects from './utils/projects';
 
 function App() {
-
-  
-
   return (
     <div>
       <Header />
