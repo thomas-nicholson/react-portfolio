@@ -1,6 +1,7 @@
 const style = {
     textAlign: "justify",
-    textJustify: "inter-word"
+    textJustify: "inter-word",
+    flexGrow: 4
 }
 
 function AboutMe() {
