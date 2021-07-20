@@ -7,7 +7,7 @@ const style = {
 function Header({ currentPage, onPageChange }) {
   return (
     <header style={style} >
-      <h1>Header</h1>
+      <h1>Thomas Nicholson</h1>
       <Navigation currentPage={currentPage} onPageChange={onPageChange} />
     </header>
   );
