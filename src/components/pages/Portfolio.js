@@ -6,7 +6,6 @@ const portfolioStyle = {
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "center",
-    color: "Green",
 }
 
 function Portfolio() {
