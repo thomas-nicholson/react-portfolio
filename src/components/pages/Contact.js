@@ -1,16 +1,16 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhone, faEnvelope, faFilePdf, faLinkedInIn } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
-
 const style = {
     container: {
         textAlign: "center",
+        width: "80%",
     },
     list: {
         listStyleType: "none",
         margin: 0,
         padding: 0,
-        width: "100%"
+        width: "100%",
+        display: "flex",
+        justifyContent: "space-around",
+        fontSize: "30px"
     },
     item: {
         display: "inline",
@@ -23,14 +23,15 @@ function Contact() {
     return(
         <div style={style.container} >
             <h2>Contact</h2>
-            <ul style={style.list}>
-                <li style={style.item}><a href="#"><FontAwesomeIcon icon={faPhone} />Phone</a></li>
-                <li style={style.item}><a href="#"><FontAwesomeIcon icon={faEnvelope} />Email</a></li>
-                <li style={style.item}><a href="#"><FontAwesomeIcon icon={faFilePdf} />Resume</a></li>
-                <li style={style.item}><a href="#"><FontAwesomeIcon icon={faLinkedin} />LinkedIn</a></li>
-                <li style={style.item}><a href="#"><FontAwesomeIcon icon={faGithub} />Github</a></li>
-                <li style={style.item}><a href="#"><FontAwesomeIcon icon={faTwitter} />Twitter</a></li>
-            </ul>
+            <form action="#">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required/><br /><br />
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required/><br /><br />
+                <textarea style={{resize:"none"}} required></textarea><br /><br />
+                <input type="submit" value="Submit" />
+            </form>
+            
         </div>
     )
 }
