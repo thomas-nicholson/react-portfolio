@@ -7,6 +7,13 @@ import Contact from './pages/Contact';
 
 import { useState } from 'react';
 
+const style = {
+  height: "100%",
+  display: "flex",
+  flexFlow: "column",
+  justifyContent: "space-between"
+}
+
 function Container() {
 
     const [currentPage, setCurrentPage] = useState('AboutMe');
@@ -27,7 +34,7 @@ function Container() {
     const onPageChange = (page) => setCurrentPage(page);
 
     return(
-        <div>
+        <div style={style}>
             <Header currentPage={currentPage} onPageChange={onPageChange}  />
                 {choosePage()}
             <Footer />
