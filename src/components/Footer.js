@@ -1,12 +1,33 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPhone, faEnvelope, faFilePdf } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 const style = {
-    textAlign: "center"
+    container: {
+        textAlign: "center",
+        width: "100%"
+    },
+    list: {
+        listStyleType: "none",
+        margin: 0,
+        padding: "5px",
+        fontSize: "20px"
+    },
+    item: {
+        display: "inline",
+        padding: 10,
+        color: "black"
+    }
 }
-
 function Footer() {
     return(
-        <div style={style} >
-            <h6>Copyright 2021 Thomas Nicholson</h6>
+        <div style={style.container} >
+            <hr />
+            <ul style={style.list}>
+                <li style={style.item}><a href="#"><FontAwesomeIcon icon={faGithub} /></a></li>
+                <li style={style.item}><a href="#"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                <li style={style.item}><a href="#"><FontAwesomeIcon icon={faTwitter} /></a></li>
+            </ul>
         </div>
     );
 }
