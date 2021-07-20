@@ -15,7 +15,6 @@ function Navigation({ currentPage, onPageChange }) {
         <div>
             <ul style={style.list}>
                 <li style={style.item}><a href="#aboutme" onClick={() => onPageChange('AboutMe')}>About Me</a></li>
-                <li style={style.item}><a href="#now" onClick={() => onPageChange('Now')}>Now</a></li>
                 <li style={style.item}><a href="#portfolio" onClick={() => onPageChange('Portfolio')}>Portfolio</a></li>
                 <li style={style.item}><a href="#contact" onClick={() => onPageChange('Contact')}>Contact</a></li>
             </ul>
