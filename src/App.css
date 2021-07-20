@@ -23,3 +23,7 @@ a:hover, a:visited:hover {
 .active {
   color: darkgray;
 }
+
+textarea:focus, input:focus{
+  outline: none;
+}

@@ -1,22 +1,21 @@
 const style = {
     container: {
-        textAlign: "center",
+        alignItems: "center",
         width: "80%",
+        fontSize: "20px"
     },
-    list: {
-        listStyleType: "none",
-        margin: 0,
-        padding: 0,
-        width: "100%",
-        display: "flex",
-        justifyContent: "space-around",
-        fontSize: "30px"
+    input: {
+        borderRadius: "50px",
+        borderStyle: "solid"
     },
-    item: {
-        display: "inline",
-        padding: 10,
-        color: "black"
+    submit: {
+        backgroundColor: "black",
+        color: "white",
+        border: "none",
+        padding: "10px",
+        borderRadius: "5px"
     }
+    
 }
 
 function Contact() {
@@ -25,12 +24,12 @@ function Contact() {
             <h2>Contact</h2>
             <form action="#">
                 <label for="name">Name:</label><br />
-                <input type="text" id="name" name="name" required/><br /><br />
+                <input style={style.input} type="text" id="name" name="name" required/><br /><br />
                 <label for="email">Email:</label><br />
-                <input type="email" id="email" name="email" required/><br /><br />
+                <input style={style.input} type="email" id="email" name="email" required/><br /><br />
                 <label for="message">Message for Thomas:</label> <br />
-                <textarea style={{resize:"none"}} id="message" name="message" required></textarea><br /><br />
-                <input type="submit" value="Submit" />
+                <textarea style={style.input} rows="10" cols="50" style={{resize:"none"}} id="message" name="message" required></textarea><br /><br />
+                <input style={style.submit} type="submit" value="Submit" />
             </form>
             
         </div>
