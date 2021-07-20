@@ -3,6 +3,7 @@ import Footer from './Footer';
 import Portfolio from './pages/Portfolio';
 import AboutMe from './pages/AboutMe';
 import Contact from './pages/Contact';
+import Resume from './pages/Resume';
 
 import { useState } from 'react';
 
@@ -19,12 +20,15 @@ function Container() {
 
     const choosePage = () => {
         if (currentPage === 'AboutMe') {
-            return <AboutMe />;
-          }
-          if (currentPage === 'Portfolio') {
-            return <Portfolio />;
-          }
-          return <Contact />;
+          return <AboutMe />;
+        }
+        if (currentPage === 'Portfolio') {
+          return <Portfolio />;
+        }
+        if (currentPage === 'Resume') {
+          return <Resume />;
+        }
+        return <Contact />;
     }
 
     const onPageChange = (page) => setCurrentPage(page);

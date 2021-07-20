@@ -17,6 +17,7 @@ function Navigation({ currentPage, onPageChange }) {
                 <li style={style.item}><a href="#aboutme" onClick={() => onPageChange('AboutMe')}>About Me</a></li>
                 <li style={style.item}><a href="#portfolio" onClick={() => onPageChange('Portfolio')}>Portfolio</a></li>
                 <li style={style.item}><a href="#contact" onClick={() => onPageChange('Contact')}>Contact</a></li>
+                <li style={style.item}><a href="#resume" onClick={() => onPageChange('Resume')}>Resume</a></li>
             </ul>
             <hr />
         </div>
