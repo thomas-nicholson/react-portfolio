@@ -22,9 +22,9 @@ function Project({title, description, img, deployedLink, gitLink}) {
     return(
         <div style={style.divStyle} >
             <h1>{title}</h1>
-            <img style={style.imgStyle} src={img} />
-            <a target="_blank" href={`${deployedLink}`}>Deployment</a>
-            <a target="_blank" href={`${gitLink}`}>GitHub</a>
+            <img style={style.imgStyle} src={img} alt="" />
+            <a target="_blank" rel="noreferrer" href={`${deployedLink}`}>Deployment</a>
+            <a target="_blank" rel="noreferrer" href={`${gitLink}`}>GitHub</a>
         </div>
     );
 }
