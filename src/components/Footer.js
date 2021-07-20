@@ -6,7 +6,7 @@ const style = {
 function Footer() {
     return(
         <div style={style} >
-            <h1>Footer Booter</h1>
+            <h6>Copyright 2021 Thomas Nicholson</h6>
         </div>
     );
 }
