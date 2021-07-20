@@ -1,3 +1,7 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPhone, faEnvelope, faFilePdf, faLinkedInIn } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
+
 const style = {
     container: {
         textAlign: "center",
@@ -20,12 +24,12 @@ function Contact() {
         <div style={style.container} >
             <h2>Contact</h2>
             <ul style={style.list}>
-                <li style={style.item}><a href="#">Phone</a></li>
-                <li style={style.item}><a href="#">Email</a></li>
-                <li style={style.item}><a href="#">Resume</a></li>
-                <li style={style.item}><a href="#">LinkedIn</a></li>
-                <li style={style.item}><a href="#">Github</a></li>
-                <li style={style.item}><a href="#">Twitter</a></li>
+                <li style={style.item}><a href="#"><FontAwesomeIcon icon={faPhone} />Phone</a></li>
+                <li style={style.item}><a href="#"><FontAwesomeIcon icon={faEnvelope} />Email</a></li>
+                <li style={style.item}><a href="#"><FontAwesomeIcon icon={faFilePdf} />Resume</a></li>
+                <li style={style.item}><a href="#"><FontAwesomeIcon icon={faLinkedin} />LinkedIn</a></li>
+                <li style={style.item}><a href="#"><FontAwesomeIcon icon={faGithub} />Github</a></li>
+                <li style={style.item}><a href="#"><FontAwesomeIcon icon={faTwitter} />Twitter</a></li>
             </ul>
         </div>
     )
