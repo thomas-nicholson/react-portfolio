@@ -1,6 +1,11 @@
+
+const style = {
+    textAlign: "center"
+}
+
 function Footer() {
     return(
-        <div>
+        <div style={style} >
             <h1>Footer Booter</h1>
         </div>
     );
