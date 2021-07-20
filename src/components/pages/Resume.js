@@ -26,7 +26,7 @@ const style = {
 function Resume() {
     return(
         <div style={style.container} >
-            <h1><a href="./assets/CV_of_Thomas_Nicholson.pdf" target="_blank"><FontAwesomeIcon icon={faFilePdf} />Resume</a></h1>
+            <h1><a href="./assets/CV_of_Thomas_Nicholson.pdf" style={{color: "black"}} target="_blank">Resume: <FontAwesomeIcon icon={faFilePdf} /></a></h1>
             <h2>Skills:</h2>
             <ul style={style.list}>
                 <li style={style.item}><FontAwesomeIcon icon={faHtml5} />HTML</li>

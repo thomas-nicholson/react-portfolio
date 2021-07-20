@@ -23,9 +23,9 @@ function Footer() {
         <div style={style.container} >
             <hr />
             <ul style={style.list}>
-                <li style={style.item}><a href="#"><FontAwesomeIcon icon={faGithub} /></a></li>
-                <li style={style.item}><a href="#"><FontAwesomeIcon icon={faLinkedin} /></a></li>
-                <li style={style.item}><a href="#"><FontAwesomeIcon icon={faTwitter} /></a></li>
+                <li style={style.item}><a href="#" className="link"><FontAwesomeIcon icon={faGithub} /></a></li>
+                <li style={style.item}><a href="#" className="link"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                <li style={style.item}><a href="#" className="link"><FontAwesomeIcon icon={faTwitter} /></a></li>
             </ul>
         </div>
     );

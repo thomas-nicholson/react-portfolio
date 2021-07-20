@@ -31,8 +31,8 @@ function Project({title, description, img, deployedLink, gitLink}) {
             <h1>{title}</h1>
             <img style={style.imgStyle} src={img} alt="" />
             <span style={style.linkStyles} >
-                <a target="_blank" rel="noreferrer" href={`${deployedLink}`}><FontAwesomeIcon icon={faExternalLinkAlt} /></a>
-                <a target="_blank" rel="noreferrer" href={`${gitLink}`}><FontAwesomeIcon icon={faGithub} /></a>
+                <a target="_blank" className="link" rel="noreferrer" href={`${deployedLink}`}><FontAwesomeIcon icon={faExternalLinkAlt} /></a>
+                <a target="_blank" className="link" rel="noreferrer" href={`${gitLink}`}><FontAwesomeIcon icon={faGithub} /></a>
             </span>
             
         </div>

@@ -9,7 +9,6 @@ html, body, #root {
 }
 
 a {
-  color: grey;
   text-decoration: none;
 }
 
@@ -17,6 +16,10 @@ a:hover, a:visited:hover {
   color: darkgray;
 }
 
-a:visited {
+.link {
   color: grey;
+}
+
+.active {
+  color: darkgray;
 }
