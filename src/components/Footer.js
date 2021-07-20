@@ -1,5 +1,4 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhone, faEnvelope, faFilePdf } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 const style = {
