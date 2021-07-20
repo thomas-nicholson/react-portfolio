@@ -1,7 +1,8 @@
 import Navigation from './Navigation';
 
 const style = {
-  textAlign: "center"
+  textAlign: "center",
+  width:"100%"
 }
 
 function Header({ currentPage, onPageChange }) {
