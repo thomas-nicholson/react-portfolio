@@ -1,6 +1,7 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
   align-items: center;
+  text-align: center;
 }
 
 html, body, #root {
