@@ -1,6 +1,7 @@
 const style = {
     textAlign: "justify",
     textJustify: "inter-word",
+    width: "80%",
     flexGrow: 4
 }
 
