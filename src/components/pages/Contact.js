@@ -24,11 +24,12 @@ function Contact() {
         <div style={style.container} >
             <h2>Contact</h2>
             <form action="#">
-                <label for="name">Name:</label>
+                <label for="name">Name:</label><br />
                 <input type="text" id="name" name="name" required/><br /><br />
-                <label for="email">Email:</label>
+                <label for="email">Email:</label><br />
                 <input type="email" id="email" name="email" required/><br /><br />
-                <textarea style={{resize:"none"}} required></textarea><br /><br />
+                <label for="message">Message for Thomas:</label> <br />
+                <textarea style={{resize:"none"}} id="message" name="message" required></textarea><br /><br />
                 <input type="submit" value="Submit" />
             </form>
             
