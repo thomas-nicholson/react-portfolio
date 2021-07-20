@@ -1,3 +1,7 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+
 const style = {
     divStyle: {
         borderStyle: "solid",
@@ -6,8 +10,11 @@ const style = {
         padding: "20px"
 
     },
-    headerStyle: {
-
+    linkStyles: {
+        display: "flex", 
+        marginTop: "20px",
+        justifyContent: "space-around",
+        fontSize: "20px"
     },
     imgStyle: {
         width: "300px",
@@ -23,8 +30,11 @@ function Project({title, description, img, deployedLink, gitLink}) {
         <div style={style.divStyle} >
             <h1>{title}</h1>
             <img style={style.imgStyle} src={img} alt="" />
-            <a target="_blank" rel="noreferrer" href={`${deployedLink}`}>Deployment</a>
-            <a target="_blank" rel="noreferrer" href={`${gitLink}`}>GitHub</a>
+            <span style={style.linkStyles} >
+                <a target="_blank" rel="noreferrer" href={`${deployedLink}`}><FontAwesomeIcon icon={faExternalLinkAlt} /></a>
+                <a target="_blank" rel="noreferrer" href={`${gitLink}`}><FontAwesomeIcon icon={faGithub} /></a>
+            </span>
+            
         </div>
     );
 }
