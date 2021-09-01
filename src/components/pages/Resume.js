@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhone, faEnvelope, faFilePdf, } from '@fortawesome/free-solid-svg-icons'
+import { faFilePdf, } from '@fortawesome/free-solid-svg-icons'
 import { faGitAlt, faReact, faNodeJs, faHtml5, faCss3, faJs} from '@fortawesome/free-brands-svg-icons'
 
 const style = {
@@ -14,7 +14,8 @@ const style = {
         width: "100%",
         display: "flex",
         justifyContent: "space-around",
-        fontSize: "30px"
+        fontSize: "30px",
+        flexWrap: "wrap"
     },
     item: {
         display: "inline",
@@ -31,8 +32,8 @@ function Resume() {
             <ul style={style.list}>
                 <li style={style.item}><FontAwesomeIcon icon={faHtml5} />HTML</li>
                 <li style={style.item}><FontAwesomeIcon icon={faCss3} />CSS</li>
-                <li style={style.item}><FontAwesomeIcon icon={faJs} />Javascript</li>
-                <li style={style.item}><FontAwesomeIcon icon={faNodeJs} />Node.JS</li>
+                <li style={style.item}><FontAwesomeIcon icon={faJs} /> Javascript</li>
+                <li style={style.item}><FontAwesomeIcon icon={faNodeJs} /> Node.JS</li>
                 <li style={style.item}><FontAwesomeIcon icon={faGitAlt} />Git</li>
                 <li style={style.item}><FontAwesomeIcon icon={faReact} />React</li>
             </ul>
