@@ -1,6 +1,11 @@
-//https://screenshot.abstractapi.com/v1/?api_key=127b4e76ddcf4746b86cec6cc6fe400a&width=1920&height=1080&capture_full_page=false&url=http://gym-club-28324.herokuapp.com/
-
 const projects = [
+    {
+      title:"bitCampus",
+      img: "./assets/bit-campus-screenshot.png",
+      gitLink: "https://github.com/thomas-nicholson/bit-campus",
+      deployedLink: "http://bitcampus.herokuapp.com",
+      description: ""
+    },
     {
       title:"Gym Club",
       img: "./assets/gym-club-screenshot.png",
